@@ -1,0 +1,39 @@
+Flutter architecture consists of three main layers:
+
+Framework (Dart) - The top layer, written in Dart, provides ready-to-use UI components and tools for building applications.
+
+Material & Cupertino: Pre-built UI components for Android (Material) and iOS (Cupertino).
+
+Widgets: Everything in Flutter is a widget, including buttons, text, images, etc.
+
+Rendering: Handles how widgets are displayed on the screen.
+
+Animation, Painting, Gestures: Supports animations, drawing UI elements, and detecting user interactions.
+
+Foundation: Core utilities that help manage apps efficiently.
+
+Engine (C/C++) - The middle layer, written in C/C++, manages low-level rendering and interactions with the system.
+
+Rendering & Composition: Converts widgets into pixels.
+
+Dart Runtime & Isolate Setup: Manages code execution and performance.
+
+Frame Scheduling & Pipelines: Ensures smooth animations and screen updates.
+
+Platform Channels: Allows communication between Dart and native code (Android/iOS).
+
+Embedder (Platform-specific) - The bottom layer, specific to the operating system, integrates Flutter with Android, iOS, or desktop platforms.
+
+Render Surface Setup: Manages how graphics are displayed on different devices.
+
+Native Plugins & App Packaging: Allows Flutter apps to use native device features like GPS, camera, and sensors.
+
+Thread & Event Loop: Handles background processes and app responsiveness.
+
+In simple terms:
+
+The Framework helps developers write UI easily.
+
+The Engine handles rendering and communication with the system.
+
+The Embedder connects Flutter to the actual device.
